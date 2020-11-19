@@ -1,15 +1,26 @@
 language: node_js
 node_js:
   - lts/*
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+  - master
+
 install:
   - yarn install # npm ci
+
 script:
   - yarn build # npm run docs:build
+
 deploy:
   provider: pages
   skip_cleanup: true
   local_dir: docs/.vuepress/dist
-  github_token:  90cb0c3cacf314d28f0761fc2d53ac7b9b546847
+  github_token:  $GITHUB_TOKEN
   keep_history: true
   on:
     branch: master
