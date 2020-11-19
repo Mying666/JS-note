@@ -13,6 +13,6 @@ mv ./docs/.vuepress/dist/* ./docs/
 
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/Mying666/JS-note.git master
+git push -f git@github.com:Mying666/JS-note.git master
 
 cd -
