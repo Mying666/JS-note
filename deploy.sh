@@ -4,6 +4,7 @@
 set -e
 
 # 生成静态文件
+rm -rf ./docs/.vuepress/dist
 npm run build
 
 git checkout gh-pages
