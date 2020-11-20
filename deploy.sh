@@ -3,15 +3,15 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+# 生成静态文件
+npm run build
+
 git checkout gh-pages
 
 # 删除原文件
 rm -rf index.html assets/ 404.html
 
-# 生成静态文件
-# npm run build
-
-mv ./docs/.vuepress/dist/* ./
+mv ./docs/.vuepress/dist/* /
 
 git add -A
 git commit -m 'deploy'
