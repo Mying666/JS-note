@@ -12,7 +12,7 @@ git checkout gh-pages
 # 删除原文件
 rm -rf index.html assets/ 404.html
 
-mv ./docs/.vuepress/dist/* /
+mv ./docs/.vuepress/dist/* ./
 
 git add -A
 git commit -m 'deploy'
