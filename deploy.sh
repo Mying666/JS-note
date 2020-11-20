@@ -14,9 +14,9 @@ rm -rf index.html assets/ 404.html
 
 mv ./docs/.vuepress/dist/* ./
 
-git add -A
+git add .
 git commit -m 'deploy'
 # git push -f git@github.com:Mying666/JS-note.git master
-git checkout master
+# git checkout master
 
 cd -
