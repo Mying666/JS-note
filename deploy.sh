@@ -4,7 +4,6 @@
 set -e
 
 # 生成静态文件
-rm -rf ./docs/.vuepress/dist
 npm run build
 
 # 切换分支
@@ -19,5 +18,6 @@ git add .
 git commit -m 'deploy'
 git push -f origin gh-pages
 git checkout master
+rm -rf ./docs/.vuepress/dist
 
 cd -
