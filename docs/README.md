@@ -221,7 +221,7 @@ ES6 的模块没有“行内”格式，必须被定义在独立的文件中（�
 
 ::: warning
 [module为以前的关键字，现在合并使用import](https://github.com/getify/You-Dont-Know-JS/issues/664)
-
+demo1
 下面代码根据最新es6语法稍作修改
 :::
 
